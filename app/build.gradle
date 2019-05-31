@@ -14,7 +14,7 @@ android {
     defaultConfig {
         applicationId "com.lf.shoppingmall"
         minSdkVersion 14
-        targetSdkVersion 24
+        targetSdkVersion 28
         versionCode 5
         versionName "1.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -51,7 +51,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.jakewharton:butterknife:8.7.0'
-    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:design:27.1.1'
     compile 'com.android.support:support-v4:24.2.1'
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'com.zhy:okhttputils:2.5.2'
@@ -61,4 +61,7 @@ dependencies {
     compile files('libs/alipaySdk-20160516.jar')//支付宝
     compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'//微信
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation "io.reactivex.rxjava2:rxjava:2.2.9"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
 }
