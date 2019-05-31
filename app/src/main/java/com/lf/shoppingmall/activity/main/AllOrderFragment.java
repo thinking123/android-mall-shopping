@@ -41,7 +41,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -51,21 +51,21 @@ import butterknife.OnClick;
 
 public class AllOrderFragment extends BaseFragment implements ViewPager.OnPageChangeListener {
 
-    @Bind(R.id.iv_custom_service)
+    @BindView(R.id.iv_custom_service)
     ImageView ivCustomService;
-    @Bind(R.id.ll_search)
+    @BindView(R.id.ll_search)
     LinearLayout ll_search;
-    @Bind(R.id.iv_search_icon)
+    @BindView(R.id.iv_search_icon)
     ImageView ivSearchIcon;
-    @Bind(R.id.tv_search_hint)
+    @BindView(R.id.tv_search_hint)
     TextView tvSearchHint;
-    @Bind(R.id.tv_right)
+    @BindView(R.id.tv_right)
     TextView tvRight;
-    @Bind(R.id.tv_notice)
+    @BindView(R.id.tv_notice)
     TextView tv_notice;
-    @Bind(R.id.tl_item)
+    @BindView(R.id.tl_item)
     TabLayout tlItem;
-    @Bind(R.id.vp_list)
+    @BindView(R.id.vp_list)
     ViewPager vpList;
     private MyPagerAdapter pageAdapter;
 
@@ -84,7 +84,7 @@ public class AllOrderFragment extends BaseFragment implements ViewPager.OnPageCh
 
     @Override
     protected void initView(View view) {
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         view.findViewById(R.id.search_bar).setVisibility(View.VISIBLE);
 //        tvRight.setBackgroundResource(R.drawable.bg_cricle_red_25);

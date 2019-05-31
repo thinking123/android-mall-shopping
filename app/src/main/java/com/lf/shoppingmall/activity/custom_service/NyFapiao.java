@@ -30,7 +30,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -40,33 +40,33 @@ import butterknife.OnClick;
  */
 
 public class NyFapiao extends BaseActivity {
-    @Bind(R.id.iv_back)
+    @BindView(R.id.iv_back)
     ImageView iv_back;
-    @Bind(R.id.rv_cate)
+    @BindView(R.id.rv_cate)
     CustomGridView rv_cate;
-    @Bind(R.id.tv_taitou)
+    @BindView(R.id.tv_taitou)
     EditText tvTaitou;
-    @Bind(R.id.tv_shibiehao)
+    @BindView(R.id.tv_shibiehao)
     EditText tvShibiehao;
-    @Bind(R.id.tv_address)
+    @BindView(R.id.tv_address)
     EditText tvAddress;
-    @Bind(R.id.tv_brand_account)
+    @BindView(R.id.tv_brand_account)
     EditText tvBrandAccount;
-    @Bind(R.id.tv_date)
+    @BindView(R.id.tv_date)
     TextView tvDate;
-    @Bind(R.id.tv_date_frist)
+    @BindView(R.id.tv_date_frist)
     TextView tvDateFrist;
-    @Bind(R.id.tv_email)
+    @BindView(R.id.tv_email)
     EditText tvEmail;
-    @Bind(R.id.tv_reg_phone)
+    @BindView(R.id.tv_reg_phone)
     EditText tvRegPhone;
-    @Bind(R.id.tv_tell_phone)
+    @BindView(R.id.tv_tell_phone)
     EditText tvTellPhone;
-    @Bind(R.id.ll_date)
+    @BindView(R.id.ll_date)
     LinearLayout llDate;
-    @Bind(R.id.ll_first_date)
+    @BindView(R.id.ll_first_date)
     LinearLayout llFirstDate;
-    @Bind(R.id.btn_login)
+    @BindView(R.id.btn_login)
     Button btnLogin;
     private GoodsDetailCateGridAdapter cateGridAdapter;
 

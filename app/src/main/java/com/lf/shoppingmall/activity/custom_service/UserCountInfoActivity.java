@@ -13,7 +13,7 @@ import com.lf.shoppingmall.bean.address.MyAddress;
 import com.lr.baseview.utils.ImmersionStatus;
 import com.lr.baseview.widget.CircleImageView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -23,25 +23,25 @@ import butterknife.OnClick;
  */
 
 public class UserCountInfoActivity extends BaseActivity {
-//    @Bind(R.id.civ_my_pic)
+//    @BindView(R.id.civ_my_pic)
 //    CircleImageView civMyPic;
-    @Bind(R.id.tv_main_account)
+    @BindView(R.id.tv_main_account)
     TextView tvMainAccount;
-    @Bind(R.id.tv_id)
+    @BindView(R.id.tv_id)
     TextView tvId;
-    @Bind(R.id.tv_store_name)
+    @BindView(R.id.tv_store_name)
     TextView tvStoreName;
-    @Bind(R.id.tv_head)
+    @BindView(R.id.tv_head)
     TextView tvHead;
-    @Bind(R.id.tv_address)
+    @BindView(R.id.tv_address)
     TextView tvAddress;
-    @Bind(R.id.tv_recever)
+    @BindView(R.id.tv_recever)
     TextView tvRecever;
-    @Bind(R.id.tv_recever_time)
+    @BindView(R.id.tv_recever_time)
     TextView tvReceverTime;
-    @Bind(R.id.tv_louceng)
+    @BindView(R.id.tv_louceng)
     TextView tvLouceng;
-    @Bind(R.id.tv_dianti)
+    @BindView(R.id.tv_dianti)
     TextView tvDianti;
 
     private final int recever = 0;

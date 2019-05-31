@@ -55,7 +55,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -66,63 +66,63 @@ import butterknife.OnClick;
 @SuppressWarnings("ResourceType")
 public class GoodsDetail0Activity extends BaseActivity implements OnRvItemClickListener {
 
-    //    @Bind(R.id.iv_banner)
+    //    @BindView(R.id.iv_banner)
 //    ImageView ivBanner;
-    @Bind(R.id.tv_name)
+    @BindView(R.id.tv_name)
     TextView tvName;
-    @Bind(R.id.tv_bannar_num)
+    @BindView(R.id.tv_bannar_num)
     TextView tv_bannar_num;
-    @Bind(R.id.vp_banner)
+    @BindView(R.id.vp_banner)
     ViewPager vp_banner;
-    @Bind(R.id.tv_add_common)
+    @BindView(R.id.tv_add_common)
     TextView tv_add_common;
-    @Bind(R.id.iv_common)
+    @BindView(R.id.iv_common)
     ImageView iv_common;
-    @Bind(R.id.rv_cate)
+    @BindView(R.id.rv_cate)
     CustomGridView rv_cate;
-    @Bind(R.id.page_top)
+    @BindView(R.id.page_top)
     PercentRelativeLayout pageTop;
-    @Bind(R.id.tv_operation)
+    @BindView(R.id.tv_operation)
     TextView tvOperation;
-    @Bind(R.id.ll_item)
+    @BindView(R.id.ll_item)
     LinearLayout llItem;
-    //    @Bind(R.id.iv_shop)
+    //    @BindView(R.id.iv_shop)
 //    CircleImageView ivShop;
     //    private GoodsDetailCateAdapter cateAdapter;
     private GoodsDetailCateGridAdapter cateGridAdapter;
-    @Bind(R.id.tv_price)
+    @BindView(R.id.tv_price)
     TextView tvPrice;
-    @Bind(R.id.tv_price_uint)
+    @BindView(R.id.tv_price_uint)
     TextView tvPriceUint;
-    @Bind(R.id.tv_uint)
+    @BindView(R.id.tv_uint)
     TextView tvUint;
-    @Bind(R.id.tv_buy_add)
+    @BindView(R.id.tv_buy_add)
     TextView tvBuyAdd;
-    @Bind(R.id.tv_sub)
+    @BindView(R.id.tv_sub)
     TextView tvSub;
-    @Bind(R.id.tv_num)
+    @BindView(R.id.tv_num)
     TextView tvNum;
-    @Bind(R.id.tv_add)
+    @BindView(R.id.tv_add)
     TextView tvAdd;
-    @Bind(R.id.tv_max_hint)
+    @BindView(R.id.tv_max_hint)
     TextView tvMaxHint;
-    @Bind(R.id.ll_add_sub)
+    @BindView(R.id.ll_add_sub)
     LinearLayout llAddSub;
-    @Bind(R.id.tv_des_hint)
+    @BindView(R.id.tv_des_hint)
     TextView tvDesHint;
-    @Bind(R.id.tv_des_content)
+    @BindView(R.id.tv_des_content)
     TextView tvDesContent;
-    @Bind(R.id.tv_total_price)
+    @BindView(R.id.tv_total_price)
     TextView tv_total_price;
-    @Bind(R.id.tv_notice_num)
+    @BindView(R.id.tv_notice_num)
     TextView tv_notice_num;
-    @Bind(R.id.ll_des)
+    @BindView(R.id.ll_des)
     LinearLayout llDes;
-    @Bind(R.id.rv_param)
+    @BindView(R.id.rv_param)
     CustomRecyclerView rv_param;
-    @Bind(R.id.webview)
+    @BindView(R.id.webview)
     WebView webview;
-    @Bind(R.id.tv_web_no)
+    @BindView(R.id.tv_web_no)
     TextView tv_web_no;
 
     private int type;

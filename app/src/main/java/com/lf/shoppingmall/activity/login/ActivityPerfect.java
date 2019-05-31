@@ -27,7 +27,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -38,15 +38,15 @@ import butterknife.OnClick;
 
 public class ActivityPerfect extends BaseActivity {
 
-    @Bind(R.id.et_shop_name)
+    @BindView(R.id.et_shop_name)
     EditText etShopName;
-    @Bind(R.id.et_shop_head)
+    @BindView(R.id.et_shop_head)
     EditText etShopHead;
-    @Bind(R.id.tv_choose_addr)
+    @BindView(R.id.tv_choose_addr)
     TextView tvChooseAddr;
-    @Bind(R.id.et_address_more)
+    @BindView(R.id.et_address_more)
     EditText etAddressMore;
-    @Bind(R.id.et_invitation)
+    @BindView(R.id.et_invitation)
     EditText etInvitation;
 
     private int type;

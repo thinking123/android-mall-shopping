@@ -27,7 +27,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 
 import org.json.JSONObject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -37,15 +37,15 @@ import butterknife.OnClick;
  */
 
 public class UserManagerActivity extends BaseActivity {
-//    @Bind(R.id.civ_my_pic)
+//    @BindView(R.id.civ_my_pic)
 //    CircleImageView civMyPic;
-    @Bind(R.id.tv_user_name)
+    @BindView(R.id.tv_user_name)
     TextView tvUserName;
-    @Bind(R.id.tv_account_manager)
+    @BindView(R.id.tv_account_manager)
     TextView tvAccountManager;
-    @Bind(R.id.tv_cache)
+    @BindView(R.id.tv_cache)
     TextView tv_cache;
-    @Bind(R.id.tv_version)
+    @BindView(R.id.tv_version)
     TextView tv_version;
 
     private String versionName;

@@ -25,6 +25,8 @@ import com.lf.shoppingmall.R;
 import com.lf.shoppingmall.activity.main.MainActivity;
 import com.lr.baseview.utils.ToastUtils;
 
+import butterknife.Unbinder;
+
 /**
  * fragment的基类
  * @author liushubao
@@ -33,7 +35,7 @@ import com.lr.baseview.utils.ToastUtils;
  */
 
 public abstract class BaseFragment extends Fragment implements View.OnClickListener {
-
+    protected Unbinder unbinder;
     protected long lastClickTime = 0;
     protected final int SUCCESS = 0;
     protected final int TIME_INTERVAL = 500;

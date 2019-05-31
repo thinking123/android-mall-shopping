@@ -34,7 +34,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -44,9 +44,9 @@ import butterknife.OnClick;
 
 public class CommonOrderListForScroll extends BaseFragment implements OnExpandItemClidkListener {
 
-    @Bind(R.id.swipe_target)
+    @BindView(R.id.swipe_target)
     CustomListView swipeTarget;
-//    @Bind(R.id.tv_none_hint)
+//    @BindView(R.id.tv_none_hint)
 //    TextView tv_none_hint;
     private ComonOrderListAdapter adapter;
 
@@ -76,7 +76,7 @@ public class CommonOrderListForScroll extends BaseFragment implements OnExpandIt
 
     @Override
     protected void initView(View view) {
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         Bundle bundle = getArguments();
         type = bundle.getString("type");
@@ -97,7 +97,7 @@ public class CommonOrderListForScroll extends BaseFragment implements OnExpandIt
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     /**

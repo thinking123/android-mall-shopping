@@ -38,7 +38,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import okhttp3.Call;
@@ -50,19 +50,19 @@ import okhttp3.Call;
 
 public class SubmitReceverActivity extends BaseActivity {
 
-    @Bind(R.id.iv_back)
+    @BindView(R.id.iv_back)
     ImageView ivBack;
-    @Bind(R.id.tv_number)
+    @BindView(R.id.tv_number)
     TextView tvNumber;
-    @Bind(R.id.tv_price)
+    @BindView(R.id.tv_price)
     TextView tvPrice;
-    @Bind(R.id.rbtn_appliy)
+    @BindView(R.id.rbtn_appliy)
     RadioButton rbtnAppliy;
-    @Bind(R.id.rbtn_wechat)
+    @BindView(R.id.rbtn_wechat)
     RadioButton rbtnWechat;
-    @Bind(R.id.rgroup_pay_type)
+    @BindView(R.id.rgroup_pay_type)
     RadioGroup rgroupPayType;
-    @Bind(R.id.btn_appliy)
+    @BindView(R.id.btn_appliy)
     Button btnAppliy;
 
     private float totalPrice;

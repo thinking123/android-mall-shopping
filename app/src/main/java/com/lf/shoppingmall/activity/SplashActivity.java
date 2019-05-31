@@ -36,7 +36,7 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -48,11 +48,11 @@ import butterknife.ButterKnife;
 
 public class SplashActivity extends BaseActivity {
 
-    @Bind(R.id.iv_start)
+    @BindView(R.id.iv_start)
     ImageView iv_start;
-    @Bind(R.id.tv_time)
+    @BindView(R.id.tv_time)
     TextView tv_time;
-    @Bind(R.id.rl_root)
+    @BindView(R.id.rl_root)
     RelativeLayout rl_root;
 
     private StartBean start;

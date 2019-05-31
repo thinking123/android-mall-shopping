@@ -6,7 +6,7 @@ import com.lf.shoppingmall.R;
 import com.lf.shoppingmall.base.BaseActivity;
 import com.lr.baseview.utils.ImmersionStatus;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -15,7 +15,7 @@ import butterknife.ButterKnife;
  */
 
 public class TermActivity extends BaseActivity {
-    @Bind(R.id.tv_term)
+    @BindView(R.id.tv_term)
     TextView tv_term;
 
     private int type = 0;//0是服务条款 1帮助手册 2是优惠券使用规则 3售后规则 4运费规则

@@ -19,7 +19,7 @@ import com.lr.baseview.utils.ImmersionStatus;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -28,9 +28,9 @@ import butterknife.ButterKnife;
  */
 
 public class RedBagActivity extends BaseActivity {
-    @Bind(R.id.tl_item)
+    @BindView(R.id.tl_item)
     TabLayout tlItem;
-    @Bind(R.id.vp_list)
+    @BindView(R.id.vp_list)
     ViewPager vpList;
     private MyPagerAdapter pageAdapter;
     private List<BaseFragment> fragments;

@@ -27,7 +27,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -37,11 +37,11 @@ import butterknife.OnClick;
  */
 
 public class UpdatePwdActivity extends BaseActivity {
-    @Bind(R.id.et_old)
+    @BindView(R.id.et_old)
     EditText etOld;
-    @Bind(R.id.et_pwd_f)
+    @BindView(R.id.et_pwd_f)
     EditText etPwdF;
-    @Bind(R.id.et_pwd_s)
+    @BindView(R.id.et_pwd_s)
     EditText etPwdS;
 
     @Override

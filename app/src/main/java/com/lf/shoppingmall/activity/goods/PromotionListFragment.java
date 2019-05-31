@@ -38,7 +38,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -48,11 +48,11 @@ import butterknife.OnClick;
 
 public class PromotionListFragment extends BaseFragment implements OnRefreshListener, OnLoadMoreListener, OnExpandItemClidkListener {
 
-    @Bind(R.id.swipe_target)
+    @BindView(R.id.swipe_target)
     ListView swipeTarget;
-    @Bind(R.id.tv_none_hint)
+    @BindView(R.id.tv_none_hint)
     TextView tv_none_hint;
-    @Bind(R.id.swipeToLoadLayout)
+    @BindView(R.id.swipeToLoadLayout)
     SwipeToLoadLayout swipeToLoadLayout;
     private ComonOrderListAdapter adapter;
 
@@ -82,7 +82,7 @@ public class PromotionListFragment extends BaseFragment implements OnRefreshList
 
     @Override
     protected void initView(View view) {
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         Bundle bundle = getArguments();
         type = bundle.getString("type");
@@ -100,7 +100,7 @@ public class PromotionListFragment extends BaseFragment implements OnRefreshList
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     public void refresh(List<GoodsVo> goodsVos){

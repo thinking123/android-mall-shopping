@@ -10,7 +10,7 @@ import com.lf.shoppingmall.base.BaseActivity;
 import com.lf.shoppingmall.common.ComParams;
 import com.lr.baseview.utils.ImmersionStatus;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -20,7 +20,7 @@ import butterknife.OnClick;
  */
 
 public class OrderSuccessActivity extends BaseActivity {
-    @Bind(R.id.iv_back)
+    @BindView(R.id.iv_back)
     ImageView ivBack;
 
     @Override

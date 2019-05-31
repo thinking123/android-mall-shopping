@@ -85,7 +85,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:onClick="pay"
             android:text="支付"
             tools:ignore="HardcodedText" />
 
@@ -94,7 +93,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:onClick="h5Pay"
             android:text="网页支付转native"
             tools:ignore="HardcodedText" />
     </LinearLayout>

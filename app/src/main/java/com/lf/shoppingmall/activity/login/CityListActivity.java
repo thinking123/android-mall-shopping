@@ -42,7 +42,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -52,19 +52,19 @@ import butterknife.OnClick;
  */
 
 public class CityListActivity extends BaseActivity implements TextWatcher, OnRvItemClickListener {
-    @Bind(R.id.et_search)
+    @BindView(R.id.et_search)
     EditText etSearch;
-    @Bind(R.id.tv_hot_hint)
+    @BindView(R.id.tv_hot_hint)
     TextView tv_hot_hint;
-    @Bind(R.id.tv_cancle)
+    @BindView(R.id.tv_cancle)
     TextView tv_cancle;
-    @Bind(R.id.tv_loc_city)
+    @BindView(R.id.tv_loc_city)
     TextView tvLocCity;
-    @Bind(R.id.rv_hot_city)
+    @BindView(R.id.rv_hot_city)
     CustomGridView rvHotCity;
-    @Bind(R.id.rv_list_city)
+    @BindView(R.id.rv_list_city)
     CustomListView rvListCity;
-    @Bind(R.id.iv_back)
+    @BindView(R.id.iv_back)
     ImageView ivBack;
     private HotCityAdapter hotCityAdapter;
     private CommonListAdapter commonListAdapter;

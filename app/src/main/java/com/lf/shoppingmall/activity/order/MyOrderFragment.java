@@ -37,7 +37,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -48,11 +48,11 @@ import butterknife.OnClick;
 
 public class MyOrderFragment extends BaseFragment implements OnLoadMoreListener, OnRefreshListener, OnRvItemClickListener {
 
-    @Bind(R.id.swipe_target)
+    @BindView(R.id.swipe_target)
     ListView swipeTarget;
-    @Bind(R.id.swipeToLoadLayout)
+    @BindView(R.id.swipeToLoadLayout)
     SwipeToLoadLayout swipeToLoadLayout;
-    @Bind(R.id.tv_none_hint)
+    @BindView(R.id.tv_none_hint)
     TextView tvNoneHint;
     private MyOrderAdapter orderAdapter;
 
@@ -78,7 +78,7 @@ public class MyOrderFragment extends BaseFragment implements OnLoadMoreListener,
 
     @Override
     protected void initView(View view) {
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         tvNoneHint.setText("去购买");
         ordreType = getArguments().getInt("type", 0);
@@ -95,7 +95,7 @@ public class MyOrderFragment extends BaseFragment implements OnLoadMoreListener,
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     @OnClick(R.id.tv_none_hint)

@@ -17,7 +17,7 @@ import com.lf.shoppingmall.weight.mybannr.MyBanner;
 import com.lr.baseview.common.OnRvItemClickListener;
 import com.lr.baseview.utils.ImmersionStatus;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -28,19 +28,19 @@ import butterknife.ButterKnife;
 
 public class GoodsDetailActivity extends BaseActivity implements AppBarLayout.OnOffsetChangedListener, OnRvItemClickListener {
 
-    @Bind(R.id.view_myBanner)
+    @BindView(R.id.view_myBanner)
     MyBanner viewMyBanner;
-    @Bind(R.id.tv_title)
+    @BindView(R.id.tv_title)
     TextView tvTitle;
-    @Bind(R.id.iv_right)
+    @BindView(R.id.iv_right)
     ImageView ivRight;
-    @Bind(R.id.page_top)
+    @BindView(R.id.page_top)
     PercentRelativeLayout pageTop;
-    @Bind(R.id.tablayout)
+    @BindView(R.id.tablayout)
     TabLayout tablayout;
-    @Bind(R.id.app_bar_layout)
+    @BindView(R.id.app_bar_layout)
     AppBarLayout appBarLayout;
-    @Bind(R.id.rv_detail)
+    @BindView(R.id.rv_detail)
     RecyclerView rvDetail;
     private GoodsDetailAdapter detailAdapter;
 

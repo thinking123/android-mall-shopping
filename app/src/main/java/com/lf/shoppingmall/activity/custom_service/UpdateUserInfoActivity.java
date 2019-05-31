@@ -30,7 +30,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -41,27 +41,28 @@ import butterknife.OnClick;
 
 public class UpdateUserInfoActivity extends BaseActivity {
 
-    @Bind(R.id.et_id)
+//    @BindViewView()
+    @BindView(R.id.et_id)
     TextView etId;
-    @Bind(R.id.et_store_name)
+    @BindView(R.id.et_store_name)
     EditText etStoreName;
-    @Bind(R.id.et_head)
+    @BindView(R.id.et_head)
     EditText etHead;
-    @Bind(R.id.tv_store_icon)
+    @BindView(R.id.tv_store_icon)
     TextView tvStoreIcon;
-    @Bind(R.id.tv_choose_addr)
+    @BindView(R.id.tv_choose_addr)
     TextView tvChooseAddr;
-    @Bind(R.id.et_address_more)
+    @BindView(R.id.et_address_more)
     EditText etAddressMore;
-    @Bind(R.id.tv_recever_time)
+    @BindView(R.id.tv_recever_time)
     TextView tvReceverTime;
-    @Bind(R.id.tv_louceng)
+    @BindView(R.id.tv_louceng)
     TextView tvLouceng;
-    @Bind(R.id.rbtn_dianti_have)
+    @BindView(R.id.rbtn_dianti_have)
     RadioButton rbtnDiantiHave;
-    @Bind(R.id.rbtn_dianti_no)
+    @BindView(R.id.rbtn_dianti_no)
     RadioButton rbtnDiantiNo;
-    @Bind(R.id.rgl_dianti)
+    @BindView(R.id.rgl_dianti)
     RadioGroup rglDianti;
 
     private final int request_addr = 0;

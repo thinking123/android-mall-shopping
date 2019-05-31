@@ -9,7 +9,7 @@ import com.lf.shoppingmall.base.BaseActivity;
 import com.lf.shoppingmall.bean.service.ComProlemContent;
 import com.lr.baseview.utils.ImmersionStatus;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -18,11 +18,11 @@ import butterknife.ButterKnife;
  */
 
 public class ProblemDetailActivity extends BaseActivity {
-    @Bind(R.id.tv_title)
+    @BindView(R.id.tv_title)
     TextView tvTitle;
-    @Bind(R.id.tv_title_problem)
+    @BindView(R.id.tv_title_problem)
     TextView tv_title_problem;
-    @Bind(R.id.tv_content)
+    @BindView(R.id.tv_content)
     TextView tvContent;
 
     @Override

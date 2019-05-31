@@ -12,7 +12,7 @@ import com.lf.shoppingmall.activity.login.TermActivity;
 import com.lf.shoppingmall.base.BaseActivity;
 import com.lr.baseview.utils.ImmersionStatus;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -22,7 +22,7 @@ import butterknife.OnClick;
  */
 
 public class ServiceCenterActivity extends BaseActivity {
-    @Bind(R.id.tv_version)
+    @BindView(R.id.tv_version)
     TextView tvVersion;
 
     @Override

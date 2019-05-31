@@ -67,7 +67,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -78,27 +78,27 @@ import butterknife.OnClick;
 
 public class HomeFragment extends BaseFragment implements OnRvItemClickListener, OnExpandItemClidkListener, OnGetGeoCoderResultListener, OnRefreshListener {
 
-    @Bind(R.id.view_myBanner)
+    @BindView(R.id.view_myBanner)
     MyBanner viewMyBanner;
-    @Bind(R.id.tv_right)
+    @BindView(R.id.tv_right)
     TextView tvRight;
-    @Bind(R.id.crv_promotion)
+    @BindView(R.id.crv_promotion)
     CustomListView crv_promotion;
     private HomePromotionAdapter promotionAdapter;
 
-    @Bind(R.id.tl_item)
+    @BindView(R.id.tl_item)
     TabLayout tlItem;
-    @Bind(R.id.tv_tab_hint)
+    @BindView(R.id.tv_tab_hint)
     TextView tvTabHint;
-    @Bind(R.id.cbox_arrow)
+    @BindView(R.id.cbox_arrow)
     CheckBox cboxArrow;
-    @Bind(R.id.crv_common)
+    @BindView(R.id.crv_common)
     CustomListView crv_common;
     private ComonOrderListAdapter adapter;
 
-    @Bind(R.id.swipeToLoadLayout)
+    @BindView(R.id.swipeToLoadLayout)
     SwipeToLoadLayout swipeToLoadLayout;
-//    @Bind(R.id.vp_list)
+//    @BindView(R.id.vp_list)
 //    CustomViewPagerForSrcoll vpList;
 //    private MyPagerAdapter pageAdapter;
 //    private List<BaseFragment> fragments;
@@ -170,7 +170,7 @@ public class HomeFragment extends BaseFragment implements OnRvItemClickListener,
 
     @Override
     protected void initView(View view) {
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         promotionAdapter = new HomePromotionAdapter(context, null, this);
 //        crv_promotion.setLayoutManager(new LinearLayoutManager(context));
@@ -205,7 +205,7 @@ public class HomeFragment extends BaseFragment implements OnRvItemClickListener,
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     @OnClick({R.id.tv_right, R.id.ll_search, R.id.ll_costom_service, R.id.tv_0, R.id.tv_1, R.id.tv_2, R.id.tv_3})

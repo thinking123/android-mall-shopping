@@ -44,35 +44,35 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {
 
-    @Bind(R.id.home_vp_content)
+    @BindView(R.id.home_vp_content)
     CustomViewPager homeVpContent;
-    @Bind(R.id.iv1)
+    @BindView(R.id.iv1)
     ImageView iv1;
-    @Bind(R.id.tv1)
+    @BindView(R.id.tv1)
     TextView tv1;
-    @Bind(R.id.iv2)
+    @BindView(R.id.iv2)
     ImageView iv2;
-    @Bind(R.id.tv2)
+    @BindView(R.id.tv2)
     TextView tv2;
-    @Bind(R.id.iv3)
+    @BindView(R.id.iv3)
     ImageView iv3;
-    @Bind(R.id.tv3)
+    @BindView(R.id.tv3)
     TextView tv3;
-    @Bind(R.id.iv4)
+    @BindView(R.id.iv4)
     ImageView iv4;
-    @Bind(R.id.tv4)
+    @BindView(R.id.tv4)
     TextView tv4;
-    @Bind(R.id.iv5)
+    @BindView(R.id.iv5)
     ImageView iv5;
-    @Bind(R.id.tv5)
+    @BindView(R.id.tv5)
     TextView tv5;
-    @Bind(R.id.tv_notice_num)
+    @BindView(R.id.tv_notice_num)
     TextView tvNoticeNum;
 
     List<BaseFragment> fragments;

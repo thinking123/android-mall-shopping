@@ -12,7 +12,7 @@ import com.lr.baseview.utils.ImmersionStatus;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
 
 public class OrderPayListActivity extends BaseActivity {
 
-    @Bind(R.id.swipe_target)
+    @BindView(R.id.swipe_target)
     ListView swipeTarget;
     private OrderPayListAdapter adapter;
 

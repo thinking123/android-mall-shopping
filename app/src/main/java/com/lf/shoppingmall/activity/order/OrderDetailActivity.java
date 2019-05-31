@@ -17,7 +17,7 @@ import com.lr.baseview.widget.CustomListView;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -28,39 +28,39 @@ import butterknife.OnClick;
 
 public class OrderDetailActivity extends BaseActivity {
 
-    @Bind(R.id.tv_order_number)
+    @BindView(R.id.tv_order_number)
     TextView tvOrderNumber;
-    @Bind(R.id.tv_order_status)
+    @BindView(R.id.tv_order_status)
     TextView tvOrderStatus;
-    @Bind(R.id.tv_more)
+    @BindView(R.id.tv_more)
     TextView tv_more;
-    @Bind(R.id.clv_goods)
+    @BindView(R.id.clv_goods)
     CustomListView clvGoods;
-    @Bind(R.id.ll_more_icon)
+    @BindView(R.id.ll_more_icon)
     LinearLayout llMoreIcon;
-    @Bind(R.id.tv_goods_price)
+    @BindView(R.id.tv_goods_price)
     TextView tvGoodsPrice;
-    @Bind(R.id.tv_yunfei)
+    @BindView(R.id.tv_yunfei)
     TextView tvYunfei;
-    @Bind(R.id.tv_yunfei_youhui)
+    @BindView(R.id.tv_yunfei_youhui)
     TextView tvYunfeiYouhui;
-    @Bind(R.id.tv_qiankuan)
+    @BindView(R.id.tv_qiankuan)
     TextView tvQiankuan;
-    @Bind(R.id.tv_now_price)
+    @BindView(R.id.tv_now_price)
     TextView tvNowPrice;
-    @Bind(R.id.tv_hsouhuoren)
+    @BindView(R.id.tv_hsouhuoren)
     TextView tvHsouhuoren;
-    @Bind(R.id.tv_address)
+    @BindView(R.id.tv_address)
     TextView tvAddress;
-    @Bind(R.id.tv_pay_type)
+    @BindView(R.id.tv_pay_type)
     TextView tvPayType;
-    @Bind(R.id.tv_buy_date)
+    @BindView(R.id.tv_buy_date)
     TextView tvBuyDate;
-    @Bind(R.id.tv_date_recever)
+    @BindView(R.id.tv_date_recever)
     TextView tvDateRecever;
-    @Bind(R.id.btn_quxiao)
+    @BindView(R.id.btn_quxiao)
     TextView btnQuxiao;
-    @Bind(R.id.btn_agin)
+    @BindView(R.id.btn_agin)
     TextView btnAgin;
 
     private MyOrderDetailAdapter adapter;

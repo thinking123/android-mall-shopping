@@ -22,7 +22,7 @@ import com.lf.shoppingmall.common.ComParams;
 import com.lr.baseview.utils.CommonUilts;
 import com.lr.baseview.widget.CircleImageView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -31,17 +31,17 @@ import butterknife.OnClick;
  */
 
 public class MineFragment extends BaseFragment {
-//    @Bind(R.id.civ_my_pic)
+//    @BindView(R.id.civ_my_pic)
 //    CircleImageView civMyPic;
-    @Bind(R.id.tv_user_name)
+    @BindView(R.id.tv_user_name)
     TextView tvUserName;
-    @Bind(R.id.tv_user_level)
+    @BindView(R.id.tv_user_level)
     TextView tvUserLevel;
-    @Bind(R.id.tv_wallet_num)
+    @BindView(R.id.tv_wallet_num)
     TextView tvWalletNum;
-    @Bind(R.id.tv_red_bag_num)
+    @BindView(R.id.tv_red_bag_num)
     TextView tvRedBagNum;
-    @Bind(R.id.tv_advance_charge)
+    @BindView(R.id.tv_advance_charge)
     TextView tvAdvanceCharge;
 
     @Override
@@ -55,7 +55,7 @@ public class MineFragment extends BaseFragment {
 
     @Override
     protected void initView(View view) {
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         initUserInfo();
     }
@@ -69,7 +69,7 @@ public class MineFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     @OnClick({R.id.iv_notice, R.id.civ_my_pic, R.id.tv_user_name, R.id.tv_user_level, R.id.tv_account_manager,

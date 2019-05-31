@@ -48,7 +48,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -61,23 +61,23 @@ import butterknife.OnClick;
 
 public class AllOrderListFragment extends BaseFragment implements OnRvItemClickListener, OnLoadMoreListener, OnRefreshListener, OnExpandItemClidkListener {
 
-    @Bind(R.id.rv_cate)
+    @BindView(R.id.rv_cate)
     RecyclerView rvCate;
-    @Bind(R.id.swipeToLoadLayout)
+    @BindView(R.id.swipeToLoadLayout)
     SwipeToLoadLayout swipeToLoadLayout;
-    @Bind(R.id.swipe_target)
+    @BindView(R.id.swipe_target)
     ListView rvList;
-    @Bind(R.id.cbox_promotion)
+    @BindView(R.id.cbox_promotion)
     TextView cboxPromotion;
-    @Bind(R.id.cbox_sales_volume)
+    @BindView(R.id.cbox_sales_volume)
     TextView cboxSalesVolume;
-    @Bind(R.id.cbox_screen)
+    @BindView(R.id.cbox_screen)
     TextView cboxScreen;
-    @Bind(R.id.ll_screen)
+    @BindView(R.id.ll_screen)
     LinearLayout llScreen;
-    @Bind(R.id.line_screen)
+    @BindView(R.id.line_screen)
     View line_screen;
-    @Bind(R.id.tv_none_hint)
+    @BindView(R.id.tv_none_hint)
     TextView tv_none_hint;
     private AllOrderListAdapter listAdapter;
     private AllOrderCateAdapter cateAdapter;
@@ -108,7 +108,7 @@ public class AllOrderListFragment extends BaseFragment implements OnRvItemClickL
 
     @Override
     protected void initView(View view) {
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         tv_none_hint.setText("暂无数据，点击重新加载");
         cateAdapter = new AllOrderCateAdapter(context, goodsCateVos, this);
@@ -129,7 +129,7 @@ public class AllOrderListFragment extends BaseFragment implements OnRvItemClickL
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     @Override

@@ -44,7 +44,7 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import okhttp3.Call;
@@ -58,19 +58,19 @@ import okhttp3.MediaType;
 
 public class RegisterActivity extends BaseActivity implements TextWatcher, CompoundButton.OnCheckedChangeListener {
 
-    @Bind(R.id.et_phone)
+    @BindView(R.id.et_phone)
     EditText etPhone;
-    @Bind(R.id.tv_get_verificode)
+    @BindView(R.id.tv_get_verificode)
     TextView tvGetVerificode;
-    @Bind(R.id.et_verification_code)
+    @BindView(R.id.et_verification_code)
     EditText etVerificationCode;
-    @Bind(R.id.et_pwd)
+    @BindView(R.id.et_pwd)
     EditText etPwd;
-    @Bind(R.id.box_ped_clear)
+    @BindView(R.id.box_ped_clear)
     CheckBox boxPedClear;
-    @Bind(R.id.tv_get_voice)
+    @BindView(R.id.tv_get_voice)
     TextView tv_get_voice;
-    @Bind(R.id.btn_login)
+    @BindView(R.id.btn_login)
     Button btnLogin;
 
     @Override

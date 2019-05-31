@@ -29,7 +29,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -39,11 +39,11 @@ import butterknife.OnClick;
  */
 
 public class ReceiverAddActivity extends BaseActivity implements TextWatcher {
-    @Bind(R.id.et_name)
+    @BindView(R.id.et_name)
     EditText etName;
-    @Bind(R.id.et_pwd)
+    @BindView(R.id.et_pwd)
     EditText etPwd;
-    @Bind(R.id.btn_login)
+    @BindView(R.id.btn_login)
     Button btnLogin;
 
     @Override

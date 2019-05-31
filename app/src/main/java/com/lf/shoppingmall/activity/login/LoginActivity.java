@@ -41,7 +41,7 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -53,27 +53,27 @@ import butterknife.OnClick;
 
 public class LoginActivity extends BaseActivity implements TextWatcher, CompoundButton.OnCheckedChangeListener {
 
-    @Bind(R.id.et_phone)
+    @BindView(R.id.et_phone)
     EditText etPhone;
-    @Bind(R.id.et_pwd)
+    @BindView(R.id.et_pwd)
     EditText etPwd;
-    @Bind(R.id.box_ped_clear)
+    @BindView(R.id.box_ped_clear)
     CheckBox boxPedClear;
-    @Bind(R.id.tv_get_verificode)
+    @BindView(R.id.tv_get_verificode)
     TextView tvGetVerificode;
-    @Bind(R.id.view_line)
+    @BindView(R.id.view_line)
     View view_line;
-    @Bind(R.id.tv_get_voice)
+    @BindView(R.id.tv_get_voice)
     TextView tv_get_voice;
-    @Bind(R.id.tv_name)
+    @BindView(R.id.tv_name)
     TextView tv_name;
-    @Bind(R.id.tv_pwd)
+    @BindView(R.id.tv_pwd)
     TextView tv_pwd;
-    @Bind(R.id.tv_forget_password)
+    @BindView(R.id.tv_forget_password)
     TextView tv_forget_password;
-    @Bind(R.id.tv_login_type)
+    @BindView(R.id.tv_login_type)
     TextView tv_login_type;
-    @Bind(R.id.btn_login)
+    @BindView(R.id.btn_login)
     Button btnLogin;
 
     private long firstTime;//点击返回键第一次时间

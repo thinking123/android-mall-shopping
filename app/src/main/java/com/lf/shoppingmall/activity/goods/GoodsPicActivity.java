@@ -16,7 +16,7 @@ import com.lr.baseview.utils.ImmersionStatus;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -26,9 +26,9 @@ import butterknife.OnClick;
  */
 
 public class GoodsPicActivity extends BaseActivity {
-    @Bind(R.id.vp_banner)
+    @BindView(R.id.vp_banner)
     ViewPager vpBanner;
-    @Bind(R.id.tv_bannar_num)
+    @BindView(R.id.tv_bannar_num)
     TextView tvBannarNum;
 
     private int bannerSize;

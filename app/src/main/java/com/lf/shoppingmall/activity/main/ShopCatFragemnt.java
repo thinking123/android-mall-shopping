@@ -69,7 +69,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -78,29 +78,29 @@ import butterknife.OnClick;
  */
 
 public class ShopCatFragemnt extends BaseFragment implements OnLoadMoreListener, OnRefreshListener, OnExpandItemClidkListener {
-    @Bind(R.id.swipe_target)
+    @BindView(R.id.swipe_target)
     ListView swipeTarget;
-    @Bind(R.id.swipeToLoadLayout)
+    @BindView(R.id.swipeToLoadLayout)
     SwipeToLoadLayout swipeToLoadLayout;
-    @Bind(R.id.tv_none_hint)
+    @BindView(R.id.tv_none_hint)
     TextView tvNoneHint;
-    //    @Bind(R.id.ll_des)
+    //    @BindView(R.id.ll_des)
 //    LinearLayout llDes;
-    @Bind(R.id.tv_select)
+    @BindView(R.id.tv_select)
     TextView tv_select;
-    @Bind(R.id.tv_total_price)
+    @BindView(R.id.tv_total_price)
     TextView tvTotalPrice;
-    @Bind(R.id.tv_operation)
+    @BindView(R.id.tv_operation)
     TextView tvOperation;
-    @Bind(R.id.iv_back)
+    @BindView(R.id.iv_back)
     ImageView ivBack;
-    @Bind(R.id.ll_opertion)
+    @BindView(R.id.ll_opertion)
     LinearLayout ll_opertion;
-    @Bind(R.id.ll_price_low_remark)
+    @BindView(R.id.ll_price_low_remark)
     LinearLayout ll_price_low_remark;
-    @Bind(R.id.tv_title)
+    @BindView(R.id.tv_title)
     TextView tvTitle;
-    @Bind(R.id.tv_right)
+    @BindView(R.id.tv_right)
     CheckableTextView tvRight;
     //    private ShopCatAdapter catAdapter;
     private ShopCatLiListAdapter catAdapter;
@@ -130,7 +130,7 @@ public class ShopCatFragemnt extends BaseFragment implements OnLoadMoreListener,
 
     @Override
     protected void initView(View view) {
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         ivBack.setVisibility(View.GONE);
         tvTitle.setText("购物车");
@@ -149,7 +149,7 @@ public class ShopCatFragemnt extends BaseFragment implements OnLoadMoreListener,
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     @OnClick({R.id.tv_none_hint, R.id.tv_operation, R.id.tv_right, R.id.tv_select})

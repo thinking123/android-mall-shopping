@@ -32,7 +32,7 @@ import java.io.File;
 import java.net.URL;
 import java.net.URLConnection;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -40,11 +40,11 @@ import butterknife.ButterKnife;
  */
 
 public class VersionActivity extends BaseActivity {
-    @Bind(R.id.version_content)
+    @BindView(R.id.version_content)
     TextView mTvUpContent;
-    @Bind(R.id.version_download_progress)
+    @BindView(R.id.version_download_progress)
     ProgressBar mPbDlProgress;
-    @Bind(R.id.version_download_progress_msg)
+    @BindView(R.id.version_download_progress_msg)
     TextView mTvDlProgressMsg;
 
     public final String ARG_VERSION_INFO = "version_info";

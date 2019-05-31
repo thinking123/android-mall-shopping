@@ -22,7 +22,7 @@ import com.lr.baseview.utils.ToastUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static android.R.id.list;
@@ -40,11 +40,11 @@ import static android.R.id.list;
 
 public class WelcomeActivity extends BaseActivity {
 
-    @Bind(R.id.vp_welcome)
+    @BindView(R.id.vp_welcome)
     ViewPager vpWelcome;
-    @Bind(R.id.tv_do)
+    @BindView(R.id.tv_do)
     TextView tv_do;
-    @Bind(R.id.ll_myDot_biz)
+    @BindView(R.id.ll_myDot_biz)
     MyDot ll_myDot;
 
     private List<WelcomeDetailBean> list;

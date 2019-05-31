@@ -9,7 +9,7 @@ import com.lf.shoppingmall.base.BaseApplication;
 import com.lf.shoppingmall.bean.UserVo;
 import com.lr.baseview.utils.ImmersionStatus;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -20,13 +20,13 @@ import butterknife.ButterKnife;
 
 public class MyYaoshi extends BaseActivity {
 
-    @Bind(R.id.tv_id)
+    @BindView(R.id.tv_id)
     TextView tvId;
-    @Bind(R.id.tv_store_name)
+    @BindView(R.id.tv_store_name)
     TextView tvStoreName;
-    @Bind(R.id.tv_person)
+    @BindView(R.id.tv_person)
     TextView tvPerson;
-    @Bind(R.id.tv_person_phone)
+    @BindView(R.id.tv_person_phone)
     TextView tvPersonPhone;
 
     @Override

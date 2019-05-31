@@ -29,7 +29,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -39,23 +39,23 @@ import butterknife.OnClick;
  */
 
 public class SubmitGoodsActivity extends BaseActivity {
-    @Bind(R.id.tv_goods_name)
+    @BindView(R.id.tv_goods_name)
     EditText tvGoodsName;
-    @Bind(R.id.tv_goods_cate)
+    @BindView(R.id.tv_goods_cate)
     TextView tvGoodsCate;
-    @Bind(R.id.tv_goods_brand)
+    @BindView(R.id.tv_goods_brand)
     EditText tvGoodsBrand;
-    @Bind(R.id.tv_goods_featrue)
+    @BindView(R.id.tv_goods_featrue)
     EditText tvGoodsFeatrue;
-    @Bind(R.id.tv_goods_biz)
+    @BindView(R.id.tv_goods_biz)
     EditText tvGoodsBiz;
-    @Bind(R.id.tv_goods_price)
+    @BindView(R.id.tv_goods_price)
     EditText tvGoodsPrice;
-    @Bind(R.id.tv_goods_des)
+    @BindView(R.id.tv_goods_des)
     EditText tvGoodsDes;
-    @Bind(R.id.tv_goods_phone)
+    @BindView(R.id.tv_goods_phone)
     EditText tvGoodsPhone;
-    @Bind(R.id.tv_title)
+    @BindView(R.id.tv_title)
     TextView tvTitle;
 
     private ComBottomPopupWindow bottomPopupWindow;

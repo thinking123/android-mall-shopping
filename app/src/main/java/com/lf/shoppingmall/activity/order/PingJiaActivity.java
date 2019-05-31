@@ -8,7 +8,7 @@ import com.lf.shoppingmall.R;
 import com.lf.shoppingmall.base.BaseActivity;
 import com.lr.baseview.utils.ImmersionStatus;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -19,15 +19,15 @@ import butterknife.OnClick;
 
 public class PingJiaActivity extends BaseActivity {
 
-    @Bind(R.id.iv_0)
+    @BindView(R.id.iv_0)
     ImageView iv0;
-    @Bind(R.id.iv_1)
+    @BindView(R.id.iv_1)
     ImageView iv1;
-    @Bind(R.id.iv_2)
+    @BindView(R.id.iv_2)
     ImageView iv2;
-    @Bind(R.id.iv_3)
+    @BindView(R.id.iv_3)
     ImageView iv3;
-    @Bind(R.id.iv_4)
+    @BindView(R.id.iv_4)
     ImageView iv4;
 
     @Override

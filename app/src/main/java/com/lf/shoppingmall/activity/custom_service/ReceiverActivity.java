@@ -31,7 +31,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -40,13 +40,13 @@ import butterknife.ButterKnife;
  */
 
 public class ReceiverActivity extends BaseActivity implements OnRefreshListener, OnLoadMoreListener, OnRvItemClickListener {
-    @Bind(R.id.tv_right)
+    @BindView(R.id.tv_right)
     CheckableTextView tvRight;
-    @Bind(R.id.swipe_target)
+    @BindView(R.id.swipe_target)
     ListView swipeTarget;
-    @Bind(R.id.swipeToLoadLayout)
+    @BindView(R.id.swipeToLoadLayout)
     SwipeToLoadLayout swipeToLoadLayout;
-    @Bind(R.id.tv_none_hint)
+    @BindView(R.id.tv_none_hint)
     TextView tvNoneHint;
     private ReceiverAdapter receiverAdapter;
 

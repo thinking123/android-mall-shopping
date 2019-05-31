@@ -42,7 +42,7 @@ public class RedBagFragment extends BaseFragment {
 
     @Override
     protected void initView(View view) {
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         type = getArguments().getInt("type", 0);
     }

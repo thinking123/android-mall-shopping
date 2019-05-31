@@ -50,7 +50,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -61,35 +61,35 @@ import butterknife.OnClick;
 
 public class SearchGoodsActivity extends BaseActivity implements TextWatcher, OnRefreshListener, OnExpandItemClidkListener {
 
-    @Bind(R.id.tv_right)
+    @BindView(R.id.tv_right)
     CheckableTextView tv_right;
-    @Bind(R.id.et_search)
+    @BindView(R.id.et_search)
     EditText etSearch;
-    //    @Bind(R.id.tv_right)
+    //    @BindView(R.id.tv_right)
 //    CheckableTextView tvRight;
-    @Bind(R.id.tv_hos_no)
+    @BindView(R.id.tv_hos_no)
     TextView tvHosNo;
-    @Bind(R.id.rv_cate)
+    @BindView(R.id.rv_cate)
     GridView rvCate;
-    @Bind(R.id.ll_list)
+    @BindView(R.id.ll_list)
     FrameLayout ll_list;
-    @Bind(R.id.ll_search_hos)
+    @BindView(R.id.ll_search_hos)
     LinearLayout llSearchHos;
-    @Bind(R.id.swipeToLoadLayout)
+    @BindView(R.id.swipeToLoadLayout)
     SwipeToLoadLayout swipeToLoadLayout;
-    @Bind(R.id.swipe_target)
+    @BindView(R.id.swipe_target)
     ListView swipe_target;
-    @Bind(R.id.tv_total_price)
+    @BindView(R.id.tv_total_price)
     TextView tvTotalPrice;
-    @Bind(R.id.tv_operation)
+    @BindView(R.id.tv_operation)
     TextView tvOperation;
-    @Bind(R.id.ll_item)
+    @BindView(R.id.ll_item)
     LinearLayout llItem;
-//    @Bind(R.id.iv_shop)
+//    @BindView(R.id.iv_shop)
 //    CircleImageView ivShop;
-    @Bind(R.id.tv_notice_num)
+    @BindView(R.id.tv_notice_num)
     TextView tvNoticeNum;
-    @Bind(R.id.tv_none_hint)
+    @BindView(R.id.tv_none_hint)
     TextView tv_none_hint;
     private GoodsDetailCateGridAdapter cateGridAdapter;
     private ComonOrderListAdapter adapter;

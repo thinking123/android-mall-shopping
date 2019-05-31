@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -38,7 +38,7 @@ import butterknife.ButterKnife;
  */
 
 public class CommonProlemActivity extends BaseActivity {
-    @Bind(R.id.lv_problems)
+    @BindView(R.id.lv_problems)
     ListView lvProblems;
     private ComProblemAdapter problemAdapter;
 

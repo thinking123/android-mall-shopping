@@ -16,7 +16,7 @@ import com.lf.shoppingmall.bean.UserVo;
 import com.lr.baseview.utils.ImmersionStatus;
 import com.lr.baseview.widget.AlertDialog;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -26,11 +26,11 @@ import butterknife.OnClick;
  */
 
 public class MyFankuiActivity extends BaseActivity {
-    @Bind(R.id.rv_cate)
+    @BindView(R.id.rv_cate)
     GridView rvCate;
-    @Bind(R.id.et_content)
+    @BindView(R.id.et_content)
     EditText etContent;
-    @Bind(R.id.et_phone)
+    @BindView(R.id.et_phone)
     EditText et_phone;
     private GoodsDetailCateGridAdapter cateGridAdapter;
 

@@ -50,7 +50,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import okhttp3.Call;
@@ -62,45 +62,45 @@ import okhttp3.Call;
 
 public class OrderPayActivity extends BaseActivity {
 
-    @Bind(R.id.iv_back)
+    @BindView(R.id.iv_back)
     ImageView iv_back;
-    @Bind(R.id.tv_user_info)
+    @BindView(R.id.tv_user_info)
     TextView tvUserInfo;
-    @Bind(R.id.tv_send_type)
+    @BindView(R.id.tv_send_type)
     TextView tvSendType;
-    @Bind(R.id.tv_send_date)
+    @BindView(R.id.tv_send_date)
     TextView tvSendDate;
-    @Bind(R.id.iv_goods0)
+    @BindView(R.id.iv_goods0)
     ImageView ivGoods0;
-    @Bind(R.id.iv_goods1)
+    @BindView(R.id.iv_goods1)
     ImageView ivGoods1;
-    @Bind(R.id.iv_goods2)
+    @BindView(R.id.iv_goods2)
     ImageView ivGoods2;
-    @Bind(R.id.iv_goods3)
+    @BindView(R.id.iv_goods3)
     ImageView ivGoods3;
-    @Bind(R.id.rbtn_online)
+    @BindView(R.id.rbtn_online)
     RadioButton rbtnOnline;
-    @Bind(R.id.rbtn_pay)
+    @BindView(R.id.rbtn_pay)
     CheckableTextView rbtnPay;
-    @Bind(R.id.rgroup_pay_type)
+    @BindView(R.id.rgroup_pay_type)
     RadioGroup rgroupPayType;
-    @Bind(R.id.tv_goods_cate)
+    @BindView(R.id.tv_goods_cate)
     TextView tvGoodsCate;
-    @Bind(R.id.tv_send_youhui)
+    @BindView(R.id.tv_send_youhui)
     TextView tvSendYouhui;
-    @Bind(R.id.tv_goods_total_price)
+    @BindView(R.id.tv_goods_total_price)
     TextView tvGoodsTotalPrice;
-    @Bind(R.id.tv_send_price)
+    @BindView(R.id.tv_send_price)
     TextView tvSendPrice;
-    @Bind(R.id.tv_send_price_youhui)
+    @BindView(R.id.tv_send_price_youhui)
     TextView tvSendPriceYouhui;
-    @Bind(R.id.tv_total_price)
+    @BindView(R.id.tv_total_price)
     TextView tvTotalPrice;
-    @Bind(R.id.tv_goods_size)
+    @BindView(R.id.tv_goods_size)
     TextView tv_goods_size;
-    @Bind(R.id.tv_pay_price)
+    @BindView(R.id.tv_pay_price)
     TextView tvPayPrice;
-    @Bind(R.id.tv_operation)
+    @BindView(R.id.tv_operation)
     TextView tvOperation;
 
     private final int RECEIVER = 10;

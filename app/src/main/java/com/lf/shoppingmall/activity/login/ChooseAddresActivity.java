@@ -67,7 +67,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -79,15 +79,15 @@ import butterknife.OnClick;
 
 public class ChooseAddresActivity extends BaseActivity implements TextWatcher, OnGetGeoCoderResultListener {
 
-    @Bind(R.id.tv_city)
+    @BindView(R.id.tv_city)
     TextView tvCity;
-    @Bind(R.id.et_search)
+    @BindView(R.id.et_search)
     EditText et_search;
-    @Bind(R.id.tv_cancle)
+    @BindView(R.id.tv_cancle)
     TextView tvCancle;
-    @Bind(R.id.map_view)
+    @BindView(R.id.map_view)
     MapView mMapView;
-    @Bind(R.id.ll_content)
+    @BindView(R.id.ll_content)
     LinearLayout llContent;
 
     private ImageButton requestLocButton;

@@ -34,7 +34,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -45,9 +45,9 @@ import butterknife.OnClick;
 
 public class CustomServiceMainActivity extends BaseActivity {
 
-    @Bind(R.id.tv_service_phone)
+    @BindView(R.id.tv_service_phone)
     TextView tv_service_phone;
-    @Bind(R.id.iv_back)
+    @BindView(R.id.iv_back)
     ImageView iv_back;
     @Override
     protected int getLayoutId() {

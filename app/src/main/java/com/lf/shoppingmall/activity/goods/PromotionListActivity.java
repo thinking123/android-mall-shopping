@@ -39,7 +39,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -49,29 +49,29 @@ import butterknife.OnClick;
  */
 
 public class PromotionListActivity extends BaseActivity implements OnExpandItemClidkListener, OnRefreshListener {
-    //    @Bind(R.id.swipe_target)
+    //    @BindView(R.id.swipe_target)
 //    ListView swipeTarget;
-    @Bind(R.id.tl_item)
+    @BindView(R.id.tl_item)
     TabLayout tlItem;
-    @Bind(R.id.vp_list)
+    @BindView(R.id.vp_list)
     ViewPager vpList;
     private MyPagerAdapter pageAdapter;
     private List<PromotionListFragment> fragments;
-//    @Bind(R.id.swipeToLoadLayout)
+//    @BindView(R.id.swipeToLoadLayout)
 //    SwipeToLoadLayout swipeToLoadLayout;
-    @Bind(R.id.iv_banner)
+    @BindView(R.id.iv_banner)
     ImageView iv_banner;
-//    @Bind(R.id.tv_none_hint)
+//    @BindView(R.id.tv_none_hint)
 //    TextView tvNoneHint;
-    @Bind(R.id.tv_total_price)
+    @BindView(R.id.tv_total_price)
     TextView tvTotalPrice;
-    @Bind(R.id.tv_operation)
+    @BindView(R.id.tv_operation)
     TextView tvOperation;
-    @Bind(R.id.iv_shop)
+    @BindView(R.id.iv_shop)
     CircleImageView ivShop;
-    @Bind(R.id.tv_notice_num)
+    @BindView(R.id.tv_notice_num)
     TextView tvNoticeNum;
-    @Bind(R.id.tv_title)
+    @BindView(R.id.tv_title)
     TextView tv_title;
 //    private ComonOrderListAdapter adapter;
 

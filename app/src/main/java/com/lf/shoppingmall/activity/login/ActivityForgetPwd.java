@@ -30,7 +30,7 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -40,19 +40,19 @@ import butterknife.OnClick;
  */
 
 public class ActivityForgetPwd extends BaseActivity implements CompoundButton.OnCheckedChangeListener {
-    @Bind(R.id.et_verification_code)
+    @BindView(R.id.et_verification_code)
     EditText etVerificationCode;
-    @Bind(R.id.et_first_pwd)
+    @BindView(R.id.et_first_pwd)
     EditText etFirstPwd;
-    @Bind(R.id.box_ped_clear1)
+    @BindView(R.id.box_ped_clear1)
     CheckBox boxPedClear1;
-    @Bind(R.id.et_pwd)
+    @BindView(R.id.et_pwd)
     EditText etPwd;
-    @Bind(R.id.box_ped_clear2)
+    @BindView(R.id.box_ped_clear2)
     CheckBox boxPedClear2;
-    @Bind(R.id.et_phone)
+    @BindView(R.id.et_phone)
     EditText etPhone;
-    @Bind(R.id.tv_get_verificode)
+    @BindView(R.id.tv_get_verificode)
     TextView tvGetVerificode;
 
     @Override
