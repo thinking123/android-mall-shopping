@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="goods_detail_params">
+        <item>品牌</item>
+        <item>规格</item>
+        <item>等级</item>
+        <item>包装</item>
+        <item>产地</item>
+        <item>生产商</item>
+    </string-array>
+    <string-array name="fapiao_months">
+        <item>每周</item>
+        <item>每两周</item>
+        <item>每月</item>
+    </string-array>
+    <string-array name="fapiao_weeks">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="fankuai_cate">
+        <item>投诉司机</item>
+        <item>投诉销售</item>
+        <item>投诉客服</item>
+        <item>商品问题</item>
+        <item>新品需求</item>
+        <item>其他</item>
+    </string-array>
+</resources>

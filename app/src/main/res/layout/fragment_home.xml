@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+            android:id="@+id/swipeToLoadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/swipe_refresh_header"
+                layout="@layout/layout_twitter_header" />
+
+
+            <ScrollView
+                android:id="@+id/swipe_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.lf.shoppingmall.weight.mybannr.MyBanner
+                        android:id="@+id/view_myBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pic_title_height"></com.lf.shoppingmall.weight.mybannr.MyBanner>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/padding_norme_15"
+                        android:paddingTop="@dimen/padding_norme_15"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tv_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/padding_norme_6"
+                            android:drawableTop="@mipmap/icon_start_buy"
+                            android:gravity="center"
+                            android:text="@string/start_buy"
+                            android:textColor="@color/text_norm_6"
+                            android:textSize="@dimen/text_fontsize_14" />
+
+                        <TextView
+                            android:id="@+id/tv_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/padding_norme_6"
+                            android:drawableTop="@mipmap/icon_common_goods"
+                            android:gravity="center"
+                            android:text="@string/common_order"
+                            android:textColor="@color/text_norm_6"
+                            android:textSize="@dimen/text_fontsize_14" />
+
+                        <TextView
+                            android:id="@+id/tv_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/padding_norme_6"
+                            android:drawableTop="@mipmap/icon_seckill"
+                            android:gravity="center"
+                            android:text="@string/my_redpacket"
+                            android:textColor="@color/text_norm_6"
+                            android:textSize="@dimen/text_fontsize_14"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/padding_norme_6"
+                            android:drawableTop="@mipmap/icon_my_orders"
+                            android:gravity="center"
+                            android:text="@string/my_order"
+                            android:textColor="@color/text_norm_6"
+                            android:textSize="@dimen/text_fontsize_14" />
+                    </LinearLayout>
+
+                    <com.lr.baseview.widget.CustomListView
+                        android:id="@+id/crv_promotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></com.lr.baseview.widget.CustomListView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/padding_norme_4"
+                        android:paddingLeft="@dimen/padding_norme_15"
+                        android:paddingRight="@dimen/padding_norme_15"
+                        android:paddingTop="@dimen/padding_norme_15">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/padding_norme_10"
+                            android:src="@mipmap/icon_my_orders" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/padding_norme_10"
+                            android:text="@string/common_order"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text_fontsize_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text="@string/my_order_in"
+                            android:textColor="@color/text_norm_8"
+                            android:textSize="@dimen/text_fontsize_12" />
+                    </LinearLayout>
+
+                    <!--<FrameLayout-->
+                    <!--android:id="@+id/fl_common_order"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"></FrameLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tl_item"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/item50_height"
+                            android:layout_marginLeft="@dimen/padding_norme_15"
+                            android:layout_weight="1"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="@color/text_green"
+                            app:tabIndicatorHeight="1dp"
+                            app:tabSelectedTextColor="@color/text_green"
+                            app:tabTextColor="@color/text_norm_8"></android.support.design.widget.TabLayout>
+
+                        <TextView
+                            android:id="@+id/tv_tab_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choose_type"
+                            android:textColor="@color/text_norm_6"
+                            android:textSize="@dimen/text_fontsize_14"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cbox_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/padding_norme_15"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableRight="@drawable/bg_check_arrow"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <com.lr.baseview.widget.CustomListView
+                        android:id="@+id/crv_common"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></com.lr.baseview.widget.CustomListView>
+
+                    <!--<com.lr.baseview.widget.CustomViewPagerForSrcoll-->
+                    <!--android:id="@+id/vp_list"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"></com.lr.baseview.widget.CustomViewPagerForSrcoll>-->
+                </LinearLayout>
+            </ScrollView>
+            <include
+                android:id="@+id/swipe_load_more_footer"
+                layout="@layout/layout_classic_footer" />
+        </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+        <include layout="@layout/include_search_bar_grey" />
+    </FrameLayout>
+</LinearLayout>

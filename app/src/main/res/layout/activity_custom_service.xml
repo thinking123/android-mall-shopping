@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/bg_line_h"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <include layout="@layout/view_title_bar_common" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_norme_10"
+            android:background="@color/bg_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/bg_line_v"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/tv_problem_com"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_pressed_white_gray"
+                android:drawablePadding="@dimen/padding_norme_8"
+                android:drawableTop="@mipmap/common_problem_green"
+                android:gravity="center"
+                android:padding="@dimen/padding_norme_15"
+                android:text="常见问题"
+                android:textColor="@color/text_norm_6"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_problem_just"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_pressed_white_gray"
+                android:drawablePadding="@dimen/padding_norme_8"
+                android:drawableTop="@mipmap/icon_store_new_product"
+                android:gravity="center"
+                android:padding="@dimen/padding_norme_15"
+                android:text="快速反馈"
+                android:textColor="@color/text_norm_6"
+                android:textSize="16.0sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_norme_10"
+            android:background="@color/bg_color"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_problem_hostory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pressed_white_gray"
+            android:drawablePadding="@dimen/padding_norme_8"
+            android:drawableRight="@drawable/bg_pressed_arrow_com"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_norme_15"
+            android:text="反馈历史"
+            android:textColor="@color/text_norm_6"
+            android:textSize="16.0sp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_norme_10"
+            android:background="@color/bg_color" />
+
+
+        <TextView
+            android:id="@+id/tv_service_term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pressed_white_gray"
+            android:drawablePadding="@dimen/padding_norme_8"
+            android:drawableRight="@drawable/bg_pressed_arrow_com"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_norme_15"
+            android:text="服务条款"
+            android:textColor="@color/text_norm_6"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_shouhou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pressed_white_gray"
+            android:drawablePadding="@dimen/padding_norme_8"
+            android:drawableRight="@drawable/bg_pressed_arrow_com"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_norme_15"
+            android:text="售后规则"
+            android:textColor="@color/text_norm_6"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_yunfei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pressed_white_gray"
+            android:drawablePadding="@dimen/padding_norme_8"
+            android:drawableRight="@drawable/bg_pressed_arrow_com"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_norme_15"
+            android:text="运费规则"
+            android:textColor="@color/text_norm_6"
+            android:textSize="16.0sp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_norme_10"
+            android:background="@color/bg_color"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_service_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pressed_white_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_norme_15"
+            android:text="在线服务"
+            android:textColor="@color/text_norm_6"
+            android:textSize="16.0sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_service_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_norme_15"
+            android:gravity="center"
+            android:padding="@dimen/padding_norme_15"
+            android:text="客服电话:"
+            android:textColor="@color/text_norm_6"
+            android:textSize="@dimen/text_fontsize_14" />
+
+    </LinearLayout>
+</ScrollView>

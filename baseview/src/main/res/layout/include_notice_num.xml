@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_notice_num"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_gravity="top|center"
+    android:layout_marginLeft="17dp"
+    android:layout_marginTop="@dimen/padding_norme_6"
+    android:background="@drawable/bg_cricle_red_25"
+    android:gravity="center"
+    android:text="44"
+    android:textColor="@color/white"
+    android:textSize="@dimen/text_fontsize_12"
+    android:visibility="gone" />

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_pop_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/line_horizontal_style"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_norme_15"
+            android:gravity="center"
+            android:text="请选择开票时间"
+            android:textColor="@color/text_drak_4"
+            android:textSize="@dimen/text_fontsize_16" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_norme_15"
+            android:paddingBottom="@dimen/padding_norme_15"
+            android:layout_gravity="right"
+            android:text="确定"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_fontsize_16" />
+    </FrameLayout>
+    
+    <View style="@style/line_horizontal_style"/>
+
+    <LinearLayout
+        android:id="@+id/lv_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:paddingBottom="@dimen/padding_norme_10"
+        android:paddingTop="@dimen/padding_norme_10"
+        android:orientation="horizontal">
+        
+        <com.lr.baseview.widget.wheel.WheelView
+            android:id="@+id/wheel_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.lr.baseview.widget.wheel.WheelView
+            android:id="@+id/wheel_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar_common" />
+
+    <View style="@style/line_horizontal_style" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="请对配送员做出评价"
+        android:textColor="@color/text_norm_8"
+        android:textSize="@dimen/text_fontsize_16" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding_norme_20"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_0"
+            android:layout_width="@dimen/pic_star_height"
+            android:layout_height="@dimen/pic_star_height"
+            android:tag="yes"
+            android:src="@mipmap/star_full"/>
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="@dimen/pic_star_height"
+            android:layout_height="@dimen/pic_star_height"
+            android:tag="yes"
+            android:layout_marginLeft="@dimen/padding_norme_15"
+            android:src="@mipmap/star_full"/>
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="@dimen/pic_star_height"
+            android:layout_height="@dimen/pic_star_height"
+            android:tag="yes"
+            android:layout_marginLeft="@dimen/padding_norme_15"
+            android:src="@mipmap/star_full"/>
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="@dimen/pic_star_height"
+            android:layout_height="@dimen/pic_star_height"
+            android:tag="yes"
+            android:layout_marginLeft="@dimen/padding_norme_15"
+            android:src="@mipmap/star_full"/>
+
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="@dimen/pic_star_height"
+            android:layout_height="@dimen/pic_star_height"
+            android:tag="yes"
+            android:layout_marginLeft="@dimen/padding_norme_15"
+            android:src="@mipmap/star_full"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_marginTop="25.0dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/bg_green_corner5"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

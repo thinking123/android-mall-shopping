@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <View style="@style/line_horizontal_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_hint"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+            <TextView
+                android:id="@+id/tv_jbj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_red_stroke"
+                android:gravity="center"
+                android:padding="@dimen/padding_norme_6"
+                android:text="惊爆价"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_fontsize_18"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_biz"
+                android:layout_width="@dimen/pic_80_height"
+                android:layout_height="@dimen/pic_80_height"
+                android:layout_marginLeft="@dimen/padding_norme_10"
+                android:layout_marginTop="@dimen/padding_norme_10"
+                android:layout_marginBottom="@dimen/padding_norme_10"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/img_default_common_bg" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_norme_10"
+            android:paddingLeft="@dimen/padding_norme_10"
+            android:paddingTop="@dimen/padding_norme_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_norme_10"
+                android:paddingRight="@dimen/padding_norme_10">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="好菜"
+                    android:textColor="@color/text_norm_6"
+                    android:textSize="@dimen/text_fontsize_16" />
+
+                <TextView
+                    android:id="@+id/tv_var"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_var"
+                    android:textColor="@color/text_norm_8"
+                    android:textSize="@dimen/text_fontsize_14" />
+
+                <View
+                    android:id="@+id/lint_var"
+                    style="@style/line_vertical_style"
+                    android:layout_marginLeft="@dimen/padding_norme_4"
+                    android:layout_marginRight="@dimen/padding_norme_4" />
+
+                <ImageView
+                    android:id="@+id/iv_del"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/icon_del_grey" />
+
+            </LinearLayout>
+
+            <View style="@style/line_horizontal_style" />
+
+            <LinearLayout
+                android:id="@+id/ll_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@drawable/bg_line_h"
+                android:showDividers="middle"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_horizontal_style" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/bg_color" />
+</LinearLayout>

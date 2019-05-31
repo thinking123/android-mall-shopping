@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/tv_do"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/bg_corner5_stroke_green"
+            android:padding="@dimen/padding_norme_10"
+            android:text="立即体验"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_fontsize_18"
+            android:visibility="gone"/>
+
+        <com.lf.shoppingmall.weight.mybannr.MyDot
+            android:id="@+id/ll_myDot_biz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            app:with_height="15dp"
+            app:leftMargin="15dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"></com.lf.shoppingmall.weight.mybannr.MyDot>
+    </FrameLayout>
+</LinearLayout>

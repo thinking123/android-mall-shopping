@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_cate"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/bg_corner5_stroke_green"
+    android:gravity="center"
+    android:padding="@dimen/padding_norme_8"
+    android:text="1*件(20斤)\n1*件(20斤)"
+    android:textColor="@color/text_green"
+    android:textSize="@dimen/text_fontsize_14">
+
+</TextView>

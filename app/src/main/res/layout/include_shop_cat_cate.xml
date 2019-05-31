@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_norme_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_norme_10"
+                android:paddingBottom="@dimen/padding_norme_10"
+                android:paddingTop="@dimen/padding_norme_10"
+                android:paddingRight="25dp"
+                android:gravity="center"
+                android:src="@mipmap/img_pay_unselected"/>
+
+            <LinearLayout
+                android:id="@+id/ll_biz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_select"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price_feature"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/padding_norme_6"
+                    android:background="@drawable/bg_corners5_red"
+                    android:gravity="center"
+                    android:text="降"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_fontsize_12"
+                    android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_biz_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥9.0(袋/3斤)"
+                android:textColor="@color/text_norm_6"
+                android:textSize="@dimen/text_fontsize_14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_biz"
+                android:layout_marginTop="@dimen/padding_norme_8"
+                android:layout_alignLeft="@id/ll_biz"
+                android:text="￥9.0"
+                android:textColor="@color/text_norm_6"
+                android:textSize="@dimen/text_fontsize_14" />
+
+            <TextView
+                android:id="@+id/tv_price_uint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_price"
+                android:layout_toRightOf="@id/tv_price"
+                android:text="/3斤"
+                android:textColor="@color/text_norm_6"
+                android:textSize="@dimen/text_fontsize_14" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:paddingRight="@dimen/padding_norme_10">
+            <include layout="@layout/include_add_sub" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <View style="@style/line_horizontal_style"/>
+</LinearLayout>

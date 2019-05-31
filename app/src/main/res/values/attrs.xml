@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyDot">
+        <attr name="with_height" format="dimension"/>
+        <attr name="leftMargin" format="dimension"/>
+    </declare-styleable>
+</resources>

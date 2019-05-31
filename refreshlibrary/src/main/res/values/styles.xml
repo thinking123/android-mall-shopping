@@ -1,0 +1,9 @@
+<resources>
+    <style name="mProgress_circle">
+        <item name="android:indeterminateDrawable">@anim/progressbar_circle</item>
+        <item name="android:minWidth">25dp</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:maxHeight">60dp</item>
+    </style>
+</resources>

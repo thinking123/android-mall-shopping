@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 主题色 -->
+    <color name="blue_color_theme_stand">#52DF4F</color>
+    <color name="blue_color_theme_linght">#52DF4F</color>
+
+    <color name="bg_register">#fff6f9f7</color>
+    <color name="orange_light">#FFCD3B</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFFFF</color>
+</resources>

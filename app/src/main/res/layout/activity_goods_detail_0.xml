@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fitsSystemWindows="true"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pic_title_height"
+                android:background="@color/bg_color">
+
+                <include layout="@layout/view_title_bar_common"/>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="45dp"
+                    android:paddingRight="45dp"></android.support.v4.view.ViewPager>
+
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_banner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="45dp"-->
+                <!--android:paddingRight="45dp"-->
+                <!--android:src="@mipmap/img_default_common_bg"/>-->
+
+                <TextView
+                    android:id="@+id/tv_bannar_num"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="@dimen/padding_norme_15"
+                    android:background="@drawable/bg_corner25_alpha80"
+                    android:gravity="center"
+                    android:text="1/1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_fontsize_14"/>
+            </FrameLayout>
+
+            <View style="@style/line_horizontal_style"/>
+
+            <include layout="@layout/item_goods_detail_0"/>
+
+            <include layout="@layout/item_goods_detail_1"/>
+
+            <include layout="@layout/item_goods_detail_2"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/ll_item"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_norme_10"
+                android:text="总价:￥0:00"
+                android:textColor="@color/text_norm_6"
+                android:textSize="@dimen/text_fontsize_14"/>
+
+            <TextView
+                android:id="@+id/tv_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/green"
+                android:gravity="center"
+                android:padding="@dimen/padding_norme_10"
+                android:text="去购物车"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fontsize_16"/>
+        </LinearLayout>
+
+        <View
+            style="@style/line_horizontal_style"
+            android:layout_above="@id/ll_item"/>
+
+        <com.lr.baseview.widget.RoundImageView
+            android:id="@+id/iv_shop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/img_myshop"
+            app:border_outside_color="@color/bg_black"
+            app:border_thickness="0.3dp"/>
+
+        <TextView
+            android:id="@+id/tv_notice_num"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@id/iv_shop"
+            android:layout_alignTop="@id/iv_shop"
+            android:layout_marginRight="@dimen/padding_norme_10"
+            android:layout_marginTop="@dimen/padding_norme_8"
+            android:background="@drawable/bg_cricle_red_25"
+            android:gravity="center"
+            android:text="44"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_fontsize_12"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

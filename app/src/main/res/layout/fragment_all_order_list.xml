@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@color/bg_default"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_norme_10">
+
+        <LinearLayout
+            android:id="@+id/ll_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/cbox_promotion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="@dimen/padding_norme_10"
+                android:tag="no"
+                android:text="只看促销"
+                android:textColor="@color/text_norm_6"
+                android:textSize="@dimen/text_fontsize_14" />
+
+            <View
+                style="@style/line_vertical_style"
+                android:layout_marginBottom="@dimen/padding_norme_8"
+                android:layout_marginTop="@dimen/padding_norme_8" />
+
+            <TextView
+                android:id="@+id/cbox_sales_volume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="@dimen/padding_norme_6"
+                android:tag="no"
+                android:text="销量"
+                android:textColor="@color/text_norm_6"
+                android:textSize="@dimen/text_fontsize_14" />
+
+            <View
+                style="@style/line_vertical_style"
+                android:layout_marginBottom="@dimen/padding_norme_8"
+                android:layout_marginTop="@dimen/padding_norme_8" />
+
+            <TextView
+                android:id="@+id/cbox_screen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/padding_norme_6"
+                android:drawableRight="@mipmap/icon_down_arrow"
+                android:padding="@dimen/padding_norme_6"
+                android:tag="no"
+                android:text="筛选"
+                android:textColor="@color/text_norm_6"
+                android:textSize="@dimen/text_fontsize_14" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_screen"
+            style="@style/line_horizontal_style" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+                android:id="@+id/swipeToLoadLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/swipe_refresh_header"
+                    layout="@layout/layout_twitter_header" />
+
+                <ListView
+                    android:id="@+id/swipe_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <include
+                    android:id="@+id/swipe_load_more_footer"
+                    layout="@layout/layout_classic_footer" />
+            </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+            <include layout="@layout/include_nodata_text_hint" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

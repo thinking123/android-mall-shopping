@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar_common" />
+
+    <View style="@style/line_horizontal_style" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_norme_15"
+        android:text="请选择您的反馈问题类型(必填)"
+        android:textColor="@color/text_norm_6"
+        android:textSize="@dimen/text_fontsize_14" />
+
+
+    <GridView
+        android:id="@+id/rv_cate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:horizontalSpacing="@dimen/padding_norme_15"
+        android:numColumns="4"
+        android:padding="@dimen/padding_norme_15"
+        android:verticalSpacing="@dimen/padding_norme_15"></GridView>
+
+
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="@dimen/padding_norme_15"
+        android:background="@drawable/bg_corner5_stroke_grey"
+        android:gravity="top|left"
+        android:hint="说点什么告诉我们吧（必填）"
+        android:maxLength="400"
+        android:padding="@dimen/padding_norme_8"
+        android:textColor="@color/text_drak_4"
+        android:textColorHint="@color/text_hint"
+        android:textSize="@dimen/text_fontsize_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_norme_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="@dimen/padding_norme_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式"
+            android:textColor="@color/text_norm_6"
+            android:textSize="@dimen/text_fontsize_16" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:hint="请输入您的有效联系方式"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textColor="@color/text_drak_4"
+            android:textColorHint="@color/text_hint"
+            android:textSize="@dimen/text_fontsize_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25.0dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/bg_green_corner5"
+            android:text="提交反馈"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/view_title_bar_common" />
+
+    <View style="@style/line_horizontal_style" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/img_pay_selected"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="恭喜您下单成功"
+        android:textSize="@dimen/text_fontsize_22"
+        android:textColor="@color/text_norm_6"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="35dp">
+
+        <Button
+            android:id="@+id/btn_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_green_corner5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="继续逛逛"/>
+
+
+        <Button
+            android:id="@+id/btn_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_corner5_stroke_green"
+            android:gravity="center"
+            android:textColor="@color/text_green"
+            android:textSize="16sp"
+            android:text="查看订单"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/line_horizontal_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_norme_10"
+            android:paddingLeft="@dimen/padding_norme_10"
+            android:paddingTop="@dimen/padding_norme_10">
+
+            <ImageView
+                android:id="@+id/iv_biz"
+                android:layout_width="@dimen/pic_80_height"
+                android:layout_height="@dimen/pic_80_height"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/img_default_common_bg" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_norme_10"
+            android:paddingRight="@dimen/padding_norme_10"
+            android:paddingTop="@dimen/padding_norme_10">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dp"
+                android:text="11"
+                android:textColor="@color/text_norm_6"
+                android:textSize="@dimen/text_fontsize_14" />
+
+            <LinearLayout
+                android:id="@+id/ll_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_norme_10"
+        android:background="@color/bg_color" />
+</LinearLayout>

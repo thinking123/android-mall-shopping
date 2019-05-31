@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 红色 -->
+    <color name="red">#FF3030</color>
+    <!--中红色-->
+    <color name="red_mid">#FF4C4C</color>
+    <!--浅红色-->
+    <color name="light_red_light">#FF6C6C</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFFFF</color>
+    <!-- 黑色 -->
+    <color name="black">#383636</color>
+    <!-- 灰色 -->
+    <color name="grey">#CCCCCC</color><!-- 浅灰色 -->
+    <color name="grey_light">#EFEFF4</color>
+    <!-- 中灰色 -->
+    <color name="grey_mid">#999999</color>
+    <!-- 深灰色 -->
+    <color name="grey_deep">#666666</color>
+    <color name="yellow">#FF9600</color>
+    <!-- 橙色 -->
+    <color name="orange">#fe9d00</color>
+    <!-- 橘红色 -->
+    <color name="orangered">#FF4500</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 半透明 -->
+    <color name="translucent">#b0000000</color>
+    <!--60%透明黑-->
+    <color name="black_alpha_less">#66000000</color>
+    <!-- 列表排序的悬浮框颜色 -->
+    <color name="gray_alpha">#CC646464</color>
+    <!-- 80%透明黑 -->
+    <color name="alpha_black">#33000000</color>
+    <!-- 90%透明黑 -->
+    <color name="alpha_black_more">#19000000</color>
+    <!--50%透明黑-->
+    <color name="alpha_black_50">#99000000</color>
+    <!-- 蓝色 -->
+    <color name="blue">#00B2EE</color>
+    <!-- 淡蓝色 -->
+    <color name="blue_light">#a055a4e9</color>
+    <!-- 深蓝色 -->
+    <color name="blue_deep">#00384E</color>
+    <!-- 绿色 -->
+    <color name="green">#3CBD4C</color>
+    <!-- 中绿色 -->
+    <color name="mid_green">#00DD7D</color>
+    <!-- 50%透明中绿色 -->
+    <color name="alpha_mid_green">#b000DD7D</color>
+    <!-- 深绿色 -->
+    <color name="deep_green">#00A000</color>
+    <!-- 亮绿色 -->
+    <color name="light_green">#4BC221</color>
+    <!-- 暗绿色 -->
+    <color name="dark_green">#34AE4C</color>
+    <!-- 粉红色 -->
+    <color name="pink">#FFC0CB</color>
+    <!-- 深粉红色 -->
+    <color name="deep_pink">#E68D7F</color>
+
+    <!-- 主题色 -->
+    <color name="blue_color_theme_stand">#008DC4</color>
+    <color name="blue_color_theme_linght">#2AAEE2</color>
+    <!-- 标题未选中颜色 -->
+    <color name="blue_tab">#79d9ff</color>
+
+    <!-- 背景色 -->
+    <color name="bg_default">#F2f2f2</color>
+    <color name="bg_color">#F2f2f2</color>
+    <color name="bg_black">#303030</color>
+
+    <!--对话框颜色-->
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+
+    <!-- 分割线颜色 -->
+    <color name="line_color">#DDDDDD</color>
+
+    <!-- 按钮颜色 -->
+    <color name="color_button_normal">#FE9D00</color>
+
+    <!-- 警示颜色 -->
+    <color name="color_warning_text">#FF4800</color>
+
+    <!-- 字体常用颜色-->
+    <color name="text_norm_6">#666666</color>
+    <color name="text_norm_7">#777777</color>
+    <color name="text_norm_8">#888888</color>
+    <color name="text_drak_4">#444444</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_blue">#008DC4</color>
+    <color name="text_green">#05CA68</color>
+    <!-- 提示文字颜色（hinttextcolor）-->
+    <color name="text_hint">#CCCCCC</color>
+    <!--MyDot-->
+    <color name="bg_dot">#55000000</color>
+    <!--WheelView-->
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="tab_bottom_bg_main">#F8F8F8</color>
+    <color name="orange_color_theme">#FE9B05</color>
+
+</resources>

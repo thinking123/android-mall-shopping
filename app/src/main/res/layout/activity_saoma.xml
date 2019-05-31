@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar_common" />
+
+    <ImageView
+        android:id="@+id/iv_qrCode"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_saoma_loading"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="扫描二维码下载APP"
+        android:layout_above="@id/iv_qrCode"
+        android:layout_marginBottom="@dimen/padding_norme_10"
+        android:padding="@dimen/padding_norme_15"
+        android:text=""
+        android:textColorHint="@color/text_hint"
+        android:textSize="@dimen/text_fontsize_16"
+        android:visibility="visible"/>
+</RelativeLayout>

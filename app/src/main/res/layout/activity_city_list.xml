@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/register_item_padding"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="@string/cancle"
+                    android:textColor="@color/text_green"
+                    android:textSize="16.0sp"
+                    android:visibility="gone"/>
+
+                <include layout="@layout/view_search_bar_common" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/register_item_padding"
+                android:text="@string/location"
+                android:textColor="@color/text_norm_8"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/tv_loc_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/img_address_green"
+                android:drawablePadding="@dimen/padding_norme_6"
+                android:padding="@dimen/register_item_padding"
+                android:text=""
+                android:textColor="@color/text_green"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_hot_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/register_item_padding"
+                android:text="@string/hot_city"
+                android:textColor="@color/text_norm_8"
+                android:textSize="12.0sp" />
+
+
+            <com.lr.baseview.widget.CustomGridView
+                android:id="@+id/rv_hot_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_norme_10"
+                android:horizontalSpacing="@dimen/padding_norme_15"
+                android:numColumns="2"
+                android:padding="@dimen/padding_norme_15"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/padding_norme_15"></com.lr.baseview.widget.CustomGridView>
+
+            <!--<com.lr.baseview.widget.CustomRecyclerView-->
+                <!--android:id="@+id/rv_hot_city"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"></com.lr.baseview.widget.CustomRecyclerView>-->
+
+            <com.lr.baseview.widget.CustomListView
+                android:id="@+id/rv_list_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/line_color"
+                android:dividerHeight="@dimen/line_03"></com.lr.baseview.widget.CustomListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

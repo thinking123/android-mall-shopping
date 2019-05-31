@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_norme_10"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_norme_15"
+        android:paddingRight="@dimen/padding_norme_15"
+        android:paddingTop="@dimen/padding_norme_10">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下单时间 2017-07-31 10:49:06"
+            android:textColor="@color/text_norm_8"
+            android:textSize="@dimen/text_fontsize_12" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="已取消"
+            android:textColor="@color/text_norm_6"
+            android:textSize="@dimen/text_fontsize_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_norme_15">
+
+        <ImageView
+            android:id="@+id/iv_icon0"
+            android:layout_width="@dimen/pic_item_height"
+            android:layout_height="@dimen/pic_item_height"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_default_common_bg"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_icon1"
+            android:layout_width="@dimen/pic_item_height"
+            android:layout_height="@dimen/pic_item_height"
+            android:layout_marginLeft="@dimen/padding_norme_10"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_default_common_bg"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_icon2"
+            android:layout_width="@dimen/pic_item_height"
+            android:layout_height="@dimen/pic_item_height"
+            android:layout_marginLeft="@dimen/padding_norme_10"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_default_common_bg"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_icon3"
+            android:layout_width="@dimen/pic_item_height"
+            android:layout_height="@dimen/pic_item_height"
+            android:layout_marginLeft="@dimen/padding_norme_10"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_default_common_bg"
+            android:visibility="invisible" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_rightarrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_norme_15"
+        android:paddingRight="@dimen/padding_norme_15"
+        android:paddingBottom="@dimen/padding_norme_10">
+
+        <TextView
+            android:id="@+id/tv_cate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="共2类商品"
+            android:textColor="@color/text_norm_8"
+            android:textSize="@dimen/text_fontsize_12" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="￥100.01(含运费￥0.0)"
+            android:textColor="@color/text_norm_6"
+            android:textSize="@dimen/text_fontsize_14" />
+    </LinearLayout>
+
+    <View style="@style/line_horizontal_style"/>
+
+    <LinearLayout
+        android:id="@+id/ll_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_norme_15"
+        android:paddingRight="@dimen/padding_norme_15"
+        android:paddingTop="@dimen/padding_norme_10"
+        android:paddingBottom="@dimen/padding_norme_10"
+        android:visibility="visible">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/btn_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_corner5_stroke_grey"
+            android:paddingTop="@dimen/padding_norme_4"
+            android:paddingBottom="@dimen/padding_norme_4"
+            android:paddingLeft="@dimen/padding_norme_8"
+            android:paddingRight="@dimen/padding_norme_8"
+            android:text="取消购买"
+            android:textColor="@color/text_norm_6"
+            android:textSize="@dimen/text_fontsize_14"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/btn_agin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_corner5_stroke_grey"
+            android:paddingTop="@dimen/padding_norme_4"
+            android:paddingBottom="@dimen/padding_norme_4"
+            android:paddingLeft="@dimen/padding_norme_8"
+            android:paddingRight="@dimen/padding_norme_8"
+            android:layout_marginLeft="@dimen/padding_norme_10"
+            android:text="再次购买"
+            android:textColor="@color/text_norm_6"
+            android:textSize="@dimen/text_fontsize_14"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

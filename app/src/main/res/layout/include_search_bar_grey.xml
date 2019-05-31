@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_costom_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_norme_15"
+        android:paddingRight="@dimen/padding_norme_15"
+        android:paddingTop="@dimen/padding_norme_10"
+        android:paddingBottom="@dimen/padding_norme_10">
+
+        <ImageView
+            android:id="@+id/iv_custom_service"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/serivece_custom"
+            android:background="@drawable/bg_corner25_alpha80"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_norme_8"
+        android:background="@drawable/bg_corner25_alpha80"
+        android:layout_marginRight="@dimen/padding_norme_15">
+
+        <ImageView
+            android:id="@+id/iv_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_search_f"
+            android:layout_marginRight="@dimen/padding_norme_10"/>
+
+        <TextView
+            android:id="@+id/tv_search_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_fontsize_16"
+            android:textColor="@color/white"
+            android:text="@string/search_hint"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_norme_6"
+        android:textSize="@dimen/text_fontsize_16"
+        android:textColor="@color/white"
+        android:text="定位中..."
+        android:background="@drawable/bg_corner25_alpha80"
+        android:layout_marginRight="@dimen/padding_norme_15"/>
+
+</LinearLayout>

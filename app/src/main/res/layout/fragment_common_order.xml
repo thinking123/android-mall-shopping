@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/search_bar"
+        layout="@layout/include_search_bar_grey"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_item"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item50_height"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padding_norme_15"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="@color/text_green"
+            app:tabTextColor="@color/text_norm_8"
+            app:tabIndicatorColor="@color/text_green"
+            app:tabIndicatorHeight="1dp"></android.support.design.widget.TabLayout>
+
+        <TextView
+            android:id="@+id/tv_tab_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_type"
+            android:textColor="@color/text_norm_6"
+            android:textSize="@dimen/text_fontsize_14"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/cbox_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:button="@null"
+            android:drawableRight="@drawable/bg_check_arrow"
+            android:layout_marginRight="@dimen/padding_norme_15"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>
