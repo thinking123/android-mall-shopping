@@ -21,7 +21,9 @@ public class Constans {
     public static final float BAIDU_ZOOM_LEVEL = 18.0f;//百度加载缩放度
 
     //    public static final String D_HTTP = "http://47.92.117.38:8088/gs";
-    public static final String D_HTTP = "http://sijix.cn/gs";
+//    public static final String D_HTTP = "http://sijix.cn/gs";
+    //modidfy base url
+    public static final String D_HTTP = "http://47.104.73.202:8080/gs";
     public static final String APP_ID = "wx4475250f68d9a5ae";
 
     /**
