@@ -23,7 +23,7 @@ public class Constans {
     //    public static final String D_HTTP = "http://47.92.117.38:8088/gs";
 //    public static final String D_HTTP = "http://sijix.cn/gs";
     //modidfy base url
-    public static final String D_HTTP = "http://47.104.73.202:8080/gs";
+    public static final String D_HTTP = "http://123.56.192.151:8080/gs";
     public static final String APP_ID = "wx4475250f68d9a5ae";
 
     /**
