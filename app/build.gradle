@@ -5,7 +5,7 @@ android {
         release {
             keyAlias 'lf'
             keyPassword '081208'
-            storeFile file('D:/keystoreexport/lf.jks')
+            storeFile file('/Users/waibao/android/keystore/lf.jks')
             storePassword '081208'
         }
     }
